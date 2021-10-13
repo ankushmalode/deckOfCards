@@ -22,7 +22,6 @@ public class Program {
         System.out.println("Welcome to Card Games");
 
         distribute();
-        showCard();
     }
 
     public static void distribute() {
@@ -34,14 +33,4 @@ public class Program {
             }
         }
     }
-
-    public static void showCard() {
-        for (int i = 0; i < PLAYERS; i++) {
-            int c = i + 1;
-            System.out.println("\n\n Player " + c + " cards:");
-            for (int j = 0; j < CARDS; j++) {
-                System.out.print(Placard[i][j] + " ");
-            }
-        }
     }
-}
